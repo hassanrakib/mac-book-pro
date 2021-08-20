@@ -63,7 +63,7 @@ const promoApplyButton = document.querySelector(".btn-danger");
 promoApplyButton.addEventListener("click", function () {
     if (promoInput.value == "stevekaku") {
         const twentyPercent = (parseFloat(totalCostElement.innerText) * 20) / 100;
-        finalTotal.innerText = parseFloat(finalTotal.innerText) - twentyPercent;
+        finalTotal.innerText = parseFloat(totalCostElement.innerText) - twentyPercent;
     }
     promoInput.value = "";
 })
