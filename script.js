@@ -8,7 +8,7 @@ const finalTotal = document.getElementById("final-total");
 // select every configuration button and add event listener
 const configurationButtons = document.querySelectorAll(".btn-outline-secondary");
 for (const configurationButton of configurationButtons) {
-    
+
     // get specific configuration cost displayed
     configurationButton.addEventListener("click", function (event) {
 
