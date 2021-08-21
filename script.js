@@ -42,18 +42,23 @@ for (const configurationButton of configurationButtons) {
         }
 
         // get total cost and final total cost after setting any configuration
-        totalAndFinalTotal();
+        totalCost();
     })
 }
 
-// total and final total
-function totalAndFinalTotal() {
+// total after setting any configuration
+function totalCost() {
     const configurationCosts = document.querySelectorAll("tbody span");
     let sum = 0;
     for (const configurationCost of configurationCosts) {
         sum += parseFloat(configurationCost.innerText);
     }
     totalCostElement.innerText = sum;
+    finalTotalCost(sum);
+}
+
+// final total after setting any configuration
+function finalTotalCost(sum) {
     finalTotal.innerText = sum;
 }
 
